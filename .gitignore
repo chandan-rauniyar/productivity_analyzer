@@ -1,0 +1,98 @@
+*.log
+.DS_Store
+.env
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+/.codex
+/.cursor/
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+_ide_helper.php
+Homestead.json
+Homestead.yaml
+Thumbs.db
+# ════════════════════════════════════════════════════════════════
+# .gitignore — Laravel Productivity Analyzer (PulseWork)
+# ════════════════════════════════════════════════════════════════
+
+# ── Laravel core ignores ───────────────────────────────────────
+/vendor/
+/node_modules/
+/public/hot
+/public/storage
+/storage/*.key
+/storage/logs/*.log
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/bootstrap/cache/*
+
+# ── Environment — NEVER commit this ───────────────────────────
+.env
+.env.backup
+.env.production
+.env.staging
+.env.local
+.env.testing
+
+# ── Azure / Microsoft credentials ─────────────────────────────
+# Extra safety — these are already in .env but listed explicitly
+# so they are never accidentally committed in any other file
+*azure_client_secret*
+*client_secret*
+
+# ── IDE and editor files ───────────────────────────────────────
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── PHP ────────────────────────────────────────────────────────
+*.cache
+*.log
+
+# ── Composer ──────────────────────────────────────────────────
+composer.phar
+
+# ── NPM / Node ────────────────────────────────────────────────
+npm-debug.log
+yarn-error.log
+
+# ── Testing ────────────────────────────────────────────────────
+/coverage/
+.phpunit.result.cache
+.phpunit.cache/
+
+# ── Build output ──────────────────────────────────────────────
+/public/build/
+/public/js/
+/public/css/
+/public/mix-manifest.json
+/public/hot
+
+# ── SQLite local database (if used for dev) ────────────────────
+/database/*.sqlite
+/database/*.sqlite-journal
+
+# ── Sail ──────────────────────────────────────────────────────
+docker-compose.override.yml
